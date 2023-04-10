@@ -4,14 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cac8d060-e0d3-4a81-89a8-aa3a318e5b70" name="Changes" comment="" />
+    <list default="true" id="cac8d060-e0d3-4a81-89a8-aa3a318e5b70" name="Changes" comment="20230406 init commit">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cmn/callAPI/GetAccounts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cmn/callAPI/GetMarketCodes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cmn/callAPI/GetMinCandle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cmn/callAPI/GetOrderBook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cmn/parsing/JsonArrayParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cmn/parsing/ParseJsonString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tradingstr/reverseMomStr/outSideDayWithDownClose/OutSideDayStr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/common/AssetVar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/common/bean/calculateCmn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixAssetAmtStr/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixAssetAmtStr/bean/Calculate_FAASS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixAssetAmtStr/service/FixAssetAmtStrService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixRateAmtStr/bean/Calculate_FixRate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixRateAmtStr/service/FixRateAmtStrService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixRiskAmtAssetStr/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixRiskAmtAssetStr/bean/Calculate_FRAASS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixRiskAmtAssetStr/service/FixRiskAmtAssetStrService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixTrdCntAmtStr/bean/Calculate_FTCAS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixTrdCntAmtStr/service/FixTrdCntAmtStrService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -30,10 +62,46 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/user/Library/Mobile Documents/com~apple~CloudDocs/Projects/tradingStr_V0.1/src/main/java/strategy",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/strategy" />
+      <recent name="$PROJECT_DIR$/src/main/java/cmn" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/personnelPack" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="GetAccounts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cmn.callAPI.GetAccounts" />
+      <module name="tradingStr_V0.1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cmn.callAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GetAccounts" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -42,7 +110,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680786180011</updated>
+      <workItem from="1680786181333" duration="358000" />
+      <workItem from="1681000667789" duration="1201000" />
+      <workItem from="1681130114834" duration="1209000" />
     </task>
+    <task id="LOCAL-00001" summary="20230406 init commit">
+      <created>1680786507694</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680786507694</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="20230406 init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="20230406 init commit" />
   </component>
 </project>
