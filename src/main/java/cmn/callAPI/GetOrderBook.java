@@ -8,6 +8,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
+import personnelPack.PersonnelKey;
 
 import java.io.IOException;
 import java.util.UUID;
@@ -71,5 +72,14 @@ public class GetOrderBook {
         }
 
         return output;
+    }
+
+    public static void main(String[] args) {
+        PersonnelKey key = new PersonnelKey();
+
+        GetOrderBook orderBook = new GetOrderBook(key.getAccKey(), key.getSecKey());
+        String book = orderBook.getOrderBook("KRW-BTC");
+
+        System.out.println(book);
     }
 }

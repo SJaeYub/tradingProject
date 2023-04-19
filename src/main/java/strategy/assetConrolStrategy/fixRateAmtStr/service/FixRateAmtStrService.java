@@ -1,7 +1,7 @@
 package strategy.assetConrolStrategy.fixRateAmtStr.service;
 
-import assetConrolStrategy.common.AssetVar;
-import assetConrolStrategy.fixRateAmtStr.bean.Calculate_FixRate;
+import strategy.assetConrolStrategy.common.AssetVar;
+import strategy.assetConrolStrategy.fixRateAmtStr.bean.Calculate_FixRate;
 
 import java.math.BigDecimal;
 

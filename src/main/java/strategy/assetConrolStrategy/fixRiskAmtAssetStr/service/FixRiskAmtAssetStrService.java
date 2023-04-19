@@ -1,7 +1,7 @@
 package strategy.assetConrolStrategy.fixRiskAmtAssetStr.service;
 
-import assetConrolStrategy.common.AssetVar;
-import assetConrolStrategy.fixRiskAmtAssetStr.bean.Calculate_FRAASS;
+import strategy.assetConrolStrategy.common.AssetVar;
+import strategy.assetConrolStrategy.fixRiskAmtAssetStr.bean.Calculate_FRAASS;
 
 import java.math.BigDecimal;
 

@@ -1,7 +1,7 @@
 package strategy.assetConrolStrategy.fixAssetAmtStr;
 
-import assetConrolStrategy.common.AssetVar;
-import assetConrolStrategy.fixAssetAmtStr.service.FixAssetAmtStrService;
+import strategy.assetConrolStrategy.common.AssetVar;
+import strategy.assetConrolStrategy.fixAssetAmtStr.service.FixAssetAmtStrService;
 
 import java.math.BigDecimal;
 

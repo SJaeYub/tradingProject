@@ -1,6 +1,6 @@
 package strategy.assetConrolStrategy.fixRiskAmtAssetStr;
 
-import assetConrolStrategy.fixRiskAmtAssetStr.service.FixRiskAmtAssetStrService;
+import strategy.assetConrolStrategy.fixRiskAmtAssetStr.service.FixRiskAmtAssetStrService;
 
 import java.math.BigDecimal;
 

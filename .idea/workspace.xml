@@ -4,28 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cac8d060-e0d3-4a81-89a8-aa3a318e5b70" name="Changes" comment="20230406 init commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cmn/callAPI/GetAccounts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cmn/callAPI/GetMarketCodes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cmn/callAPI/GetMinCandle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cmn/callAPI/GetOrderBook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cmn/parsing/JsonArrayParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cmn/parsing/ParseJsonString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/tradingstr/reverseMomStr/outSideDayWithDownClose/OutSideDayStr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/common/AssetVar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/common/bean/calculateCmn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixAssetAmtStr/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixAssetAmtStr/bean/Calculate_FAASS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixAssetAmtStr/service/FixAssetAmtStrService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixRateAmtStr/bean/Calculate_FixRate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixRateAmtStr/service/FixRateAmtStrService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixRiskAmtAssetStr/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixRiskAmtAssetStr/bean/Calculate_FRAASS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixRiskAmtAssetStr/service/FixRiskAmtAssetStrService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixTrdCntAmtStr/bean/Calculate_FTCAS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixTrdCntAmtStr/service/FixTrdCntAmtStrService.java" afterDir="false" />
+    <list default="true" id="cac8d060-e0d3-4a81-89a8-aa3a318e5b70" name="Changes" comment="20230410 openAPIPJ &lt;-&gt; tradingStr Sync">
+      <change afterPath="$PROJECT_DIR$/src/main/java/cmn/MarketData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cmn/parsing/MarketDataParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tradingstr/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tradingstr/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/tradingstr/reverseMomStr/outSideDayWithDownClose/OutSideDayStr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tradingstr/reverseMomStr/outSideDayWithDownClose/OutSideDayStr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixAssetAmtStr/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixAssetAmtStr/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixAssetAmtStr/service/FixAssetAmtStrService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixAssetAmtStr/service/FixAssetAmtStrService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixRateAmtStr/service/FixRateAmtStrService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixRateAmtStr/service/FixRateAmtStrService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixRiskAmtAssetStr/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixRiskAmtAssetStr/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixRiskAmtAssetStr/service/FixRiskAmtAssetStrService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixRiskAmtAssetStr/service/FixRiskAmtAssetStrService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixTrdCntAmtStr/service/FixTrdCntAmtStrService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/strategy/assetConrolStrategy/fixTrdCntAmtStr/service/FixTrdCntAmtStrService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,20 +48,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/user/Library/Mobile Documents/com~apple~CloudDocs/Projects/tradingStr_V0.1/src/main/java/strategy",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/user/Library/Mobile Documents/com~apple~CloudDocs/Projects/tradingStr_V0.1/src/main/java/strategy&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/strategy" />
@@ -82,7 +72,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/personnelPack" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="GetAccounts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cmn.callAPI.GetAccounts" />
       <module name="tradingStr_V0.1" />
@@ -96,8 +86,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GetOrderBook" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cmn.callAPI.GetOrderBook" />
+      <module name="tradingStr_V0.1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cmn.callAPI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.tradingstr.Main" />
+      <module name="tradingStr_V0.1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.tradingstr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.GetOrderBook" />
         <item itemvalue="Application.GetAccounts" />
       </list>
     </recent_temporary>
@@ -112,7 +130,8 @@
       <updated>1680786180011</updated>
       <workItem from="1680786181333" duration="358000" />
       <workItem from="1681000667789" duration="1201000" />
-      <workItem from="1681130114834" duration="1209000" />
+      <workItem from="1681130114834" duration="1602000" />
+      <workItem from="1681897934972" duration="4876000" />
     </task>
     <task id="LOCAL-00001" summary="20230406 init commit">
       <created>1680786507694</created>
@@ -121,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680786507694</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="20230410 openAPIPJ &lt;-&gt; tradingStr Sync">
+      <created>1681131715959</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681131715959</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +155,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="20230406 init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="20230406 init commit" />
+    <MESSAGE value="20230410 openAPIPJ &lt;-&gt; tradingStr Sync" />
+    <option name="LAST_COMMIT_MESSAGE" value="20230410 openAPIPJ &lt;-&gt; tradingStr Sync" />
   </component>
 </project>

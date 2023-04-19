@@ -1,7 +1,7 @@
 package strategy.assetConrolStrategy.fixAssetAmtStr.service;
 
-import assetConrolStrategy.common.AssetVar;
-import assetConrolStrategy.fixAssetAmtStr.bean.Calculate_FAASS;
+import strategy.assetConrolStrategy.common.AssetVar;
+import strategy.assetConrolStrategy.fixAssetAmtStr.bean.Calculate_FAASS;
 
 import java.math.BigDecimal;
 
