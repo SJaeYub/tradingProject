@@ -3,7 +3,7 @@ package cmn.parsing;
 import java.util.ArrayList;
 import java.util.List;
 
-import cmn.MarketData;
+import cmn.dataGrid.MarketData;
 import org.json.JSONArray;
 import org.json.JSONObject;
 

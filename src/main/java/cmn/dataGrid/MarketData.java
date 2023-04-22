@@ -1,4 +1,4 @@
-package cmn;
+package cmn.dataGrid;
 
 import java.math.BigDecimal;
 
