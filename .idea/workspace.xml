@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cac8d060-e0d3-4a81-89a8-aa3a318e5b70" name="Changes" comment="20230419 커밋">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cmn/callAPI/GetTicker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cmn/callAPI/GetTradeTicks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cmn/dataGrid/TickerData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cmn/dataGrid/TicksData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cmn/parsing/TickerDataParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cmn/parsing/TicksDataParser.java" afterDir="false" />
+    <list default="true" id="cac8d060-e0d3-4a81-89a8-aa3a318e5b70" name="Changes" comment="20230422 래리윌리엄스 전략 구현 완료, 손절매 가격 설정 X">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/tradingstr/reverseMomentumTwoCandle/decSignal/DecisionSignal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cmn/MarketData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cmn/dataGrid/MarketData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cmn/parsing/MarketDataParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cmn/parsing/MarketDataParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/tradingstr/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tradingstr/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/tradingstr/reverseMomStr/outSideDayWithDownClose/OutSideDayStr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/tradingstr/reverseMomStr/outSideDayWithDownClose/OutSideDayStr.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +151,9 @@
       <workItem from="1681000667789" duration="1201000" />
       <workItem from="1681130114834" duration="1602000" />
       <workItem from="1681897934972" duration="5174000" />
-      <workItem from="1682158413601" duration="8852000" />
+      <workItem from="1682158413601" duration="9036000" />
+      <workItem from="1682172506795" duration="110000" />
+      <workItem from="1683031892235" duration="1428000" />
     </task>
     <task id="LOCAL-00001" summary="20230406 init commit">
       <created>1680786507694</created>
@@ -183,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681903117548</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="20230422 래리윌리엄스 전략 구현 완료, 손절매 가격 설정 X">
+      <created>1682172129513</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682172129513</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +193,7 @@
     <MESSAGE value="20230406 init commit" />
     <MESSAGE value="20230410 openAPIPJ &lt;-&gt; tradingStr Sync" />
     <MESSAGE value="20230419 커밋" />
-    <option name="LAST_COMMIT_MESSAGE" value="20230419 커밋" />
+    <MESSAGE value="20230422 래리윌리엄스 전략 구현 완료, 손절매 가격 설정 X" />
+    <option name="LAST_COMMIT_MESSAGE" value="20230422 래리윌리엄스 전략 구현 완료, 손절매 가격 설정 X" />
   </component>
 </project>
