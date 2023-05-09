@@ -1,8 +1,10 @@
 package org.tradingstr.reverseMomentumTwoCandle.decSignal;
 
+import cmn.calculateMethod.CalculateBean;
 import cmn.dataGrid.MarketData;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class DecisionSignal {
 
@@ -16,7 +18,12 @@ public class DecisionSignal {
         this.preCandle = preCandle;
     }
 
-    public boolean getSignal() {
+    /**
+     * 매수 시그널 발생
+     *
+     * @return 2연속 양봉 후 음봉 시 매수 시그널 발생
+     */
+    public boolean getPreBuySignal() {
         boolean result = false;
 
         BigDecimal openingPrice_preFirst = this.pre1Candle.getOpening_price();
@@ -41,7 +48,7 @@ public class DecisionSignal {
     }
 
     /**
-     * 상승봉인지 하강봉인지 판단
+     * 양봉인지 음봉인지 판단
      * openingPrice < tradePrice 상승     true
      * openingPrice >= tradePrice 하강    false
      *
@@ -57,4 +64,41 @@ public class DecisionSignal {
 
         return false;
     }
+
+    /**
+     * 매수 예비 시그널 발생 후 직전 양봉 고점 돌파 판단 시 매수 시그널 발생
+     *
+     * @return 5개 봉 동안 고점 돌파시 true, 미돌파시 false
+     */
+    public boolean decisionTradeSignal(BigDecimal stanHighPrice, MarketData currCandle) {
+        boolean result = false;
+
+        if (stanHighPrice.compareTo(currCandle.getHigh_price()) == -1) {
+            result = true;
+        }
+
+        return result;
+    }
+
+    /**
+     * 직전 캔들을 통해 전일 기준 -1.0% 이상 종가 하락 시 매도 시그널 발생
+     *
+     * @param standardPrice 매도 기준 가격
+     * @param currCandle    전일 캔들
+     * @return
+     */
+    public boolean decisionSellSignal(BigDecimal standardPrice, MarketData currCandle, BigDecimal standardNum) {
+        boolean result = false;
+
+        CalculateBean calculateBean = new CalculateBean();
+        BigDecimal rate = calculateBean.calculateRate(standardPrice, currCandle.getTrade_price());
+
+        if (rate.compareTo(new BigDecimal(String.valueOf(standardNum))) <= 0) {
+            result = true;
+        }
+
+        return result;
+    }
+
+
 }
